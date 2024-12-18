@@ -19,6 +19,19 @@
       <div class="navBar">
         <div class="navHeader">AuRa</div>
         <div class="toggle-wrapper">
+          <div class="auto-detect-wrapper">
+            <label class="toggleLabel" for="auto-detect"
+              >Auto-Mode-Detection</label
+            >
+            <label style="z-index: 1000" class="switch">
+              <input
+                id="auto-detect"
+                name="auto-detect"
+                type="checkbox"
+                onchange="toogleAutoDetection()"
+              />
+              <span class="slider round"></span>
+            </label>
           </div>
           <div class="mode-toggle-wrapper">
             <label class="toggleLabel" for="mode-toggle">Outdoor</label>
