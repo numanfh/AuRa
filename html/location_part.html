@@ -1,0 +1,38 @@
+<a-scene
+  vr-mode-ui="enabled: false"
+  arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
+  click-detector
+>
+  <a-assets>
+    <a-asset-item id="trex" src="../assets/trex/scene.gltf" />
+  </a-assets>
+
+  <a-entity
+    gps-new-entity-place="latitude: 51.05; longitude: -0.722"
+    scale="3 3 3"
+    look-at="[gps-new-camera]"
+  >
+    <a-gltf-model
+      src="#trex"
+      clickable="https://de.wikipedia.org/wiki/Tyrannosaurus"
+      position="0 -15 0"
+    >
+      <a-entity
+        geometry="primitive: plane; width: 60; height: 0;"
+        text="value: \nTyrannosaurus (Latinisierung von altgriechisch τύραννος týrannos [„Herrscher, Despot“] sowie σαῦρος saúros [„Echse“]) ist eine Gattung bipeder, fleischfressender Dinosaurier aus der Gruppe der Theropoda.\n
+                        [Tap to see more information]\n\n;
+                color: black; zOffset: 0.5; xOffset: 0.9;"
+        material="color: white"
+        position="0 -15 0"
+      ></a-entity>
+    </a-gltf-model>
+  </a-entity>
+
+  <!-- Zum Testen werden hier Koordinaten simuliert -->
+  <!-- In Produktion müsste man die beiden "simulate" Attribute weglassen -->
+  <a-camera
+    gps-new-camera="gpsMinDistance: 5; simulateLatitude: 51.049; simulateLongitude: -0.723;"
+    cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;"
+    raycaster="objects: [clickable];"
+  ></a-camera>
+</a-scene>

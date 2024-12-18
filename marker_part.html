@@ -1,0 +1,37 @@
+<a-scene
+  vr-mode-ui="enabled: false"
+  arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+  click-detector
+>
+  <a-assets>
+    <a-asset-item id="magnemite" src="../assets/magnemite/scene.gltf" />
+  </a-assets>
+
+  <a-marker
+    type="barcode"
+    value="1"
+    clickable="https://www.pokewiki.de/Magnetilo"
+  >
+    <a-gltf-model
+      src="#magnemite"
+      scale="0.1 0.1 0.1"
+      rotation="-90 0 0"
+      position="0 0 0"
+    >
+      <a-entity
+        geometry="primitive: plane; width: 50; height: 0;"
+        text="value: \nMagnetilo ist ein Pokémon mit den Typen Elektro und Stahl und existiert seit der ersten Spielgeneration. Vor Veröffentlichung der zweiten Spielgeneration besaß es ausschließlich den Typ Elektro.\n
+                [Tap to see more information]\n\n;
+            color: black; zOffset: 0.9; xOffset: 0.9;"
+        material="color: white"
+        position="0 -10 0"
+      ></a-entity>
+    </a-gltf-model>
+  </a-marker>
+
+  <a-entity
+    camera
+    cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;"
+    raycaster="objects: [clickable];"
+  ></a-entity>
+</a-scene>
