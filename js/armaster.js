@@ -54,10 +54,10 @@ function switchMode(mode) {
   let arDoc;
 
   if (mode == OUTDOOR) {
-    arDoc = "./location_part.html";
+    arDoc = "location_part.html";
     modeToggle.checked = false;
   } else {
-    arDoc = "./marker_part.html";
+    arDoc = "marker_part.html";
     modeToggle.checked = true;
   }
 
