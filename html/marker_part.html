@@ -5,6 +5,7 @@
 >
   <a-assets>
     <a-asset-item id="mcqueen" src="assets/mcqueen/scene.gltf" />
+    <a-asset-item id="knuckles" src="assets/knuckles/scene.gltf" />
   </a-assets>
 
   <a-marker
@@ -14,9 +15,9 @@
   >
     <a-gltf-model
             src="#mcqueen"
-            scale="0.8 0.8 0.8"
+            scale="0.5 0.5 0.5"
             rotation="0 180 0"
-            position="0 0 0"
+            position="0 0.5 0"
     ></a-gltf-model>
 
     <a-entity
@@ -26,6 +27,19 @@
             position="0 0.3 0"
     ></a-entity>
   </a-marker>
+
+  <a-marker
+          type="pattern"
+          url="assets/marker/pattern-knuckles.patt"
+  >
+    <a-gltf-model
+            src="#knuckles"
+            scale="1.5 1.5 1.5"
+            rotation="0 180 0"
+            position="0 0.5 0"
+    ></a-gltf-model>
+  </a-marker>
+
 
   <a-entity
           camera
