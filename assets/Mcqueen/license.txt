@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lightning Mcqueen--lightning league mobile
+* source:	https://sketchfab.com/3d-models/lightning-mcqueen-lightning-league-mobile-4690d9bdc400436a9b2fa784383554f0
+* author:	characters (https://sketchfab.com/Nintendo_characters)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lightning Mcqueen--lightning league mobile" (https://sketchfab.com/3d-models/lightning-mcqueen-lightning-league-mobile-4690d9bdc400436a9b2fa784383554f0) by characters (https://sketchfab.com/Nintendo_characters) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
