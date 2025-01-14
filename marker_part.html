@@ -4,38 +4,38 @@
         click-detector
 >
   <a-assets>
-    <a-asset-item id="mcqueen" src="assets/mcqueen/scene.gltf" />
-    <a-asset-item id="knuckles" src="assets/knuckles/scene.gltf" />
+    <a-asset-item id="Mcqueen" src="assets/Mcqueen/scene.gltf" />
+    <a-asset-item id="Knuckles" src="assets/knuckles/scene.gltf" />
   </a-assets>
 
   <a-marker
-      type="pattern"
-      url="assets/marker/pattern-mcqueen.patt"
-      clickable="https://www.pokewiki.de/Magnetilo"
+          type="pattern"
+          url="assets/marker/pattern-mcqueen.patt"
+          clickable="https://www.pokewiki.de/Magnetilo"
   >
     <a-gltf-model
-        src="#mcqueen"
-        scale="0.5 0.5 0.5"
-        rotation="0 180 0"
-        position="0 0.5 0"
+            src="#Mcqueen"
+            scale="0.5 0.5 0.5"
+            rotation="0 180 0"
+            position="0 0.5 0"
     ></a-gltf-model>
 
     <a-entity
-        geometry="primitive: plane; width: 1; height: 0.5;"
-        text="value: Lightning McQueen [Tap for more info]; color: black;"
-        material="color: white"
-        position="0 0.3 0"
+            geometry="primitive: plane; width: 1; height: 0.5;"
+            text="value: Lightning McQueen [Tap for more info]; color: black;"
+            material="color: white"
+            position="0 0.3 0"
     ></a-entity>
   </a-marker>
 
   <a-marker
           type="pattern"
-          url="assets/marker/pattern-knuckles2.patt"
+          url="assets/marker/pattern-knuckles3.patt"
           clickable="https://www.pokewiki.de/Magnetilo"
   >
     <a-gltf-model
-            src="#knuckles"
-            scale="10 10 10"
+            src="#Knuckles"
+            scale="1 1 1"
             rotation="0 180 0"
             position="0 0.5 0"
     ></a-gltf-model>
