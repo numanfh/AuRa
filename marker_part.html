@@ -7,35 +7,27 @@
     <a-asset-item id="mcqueen" src="assets/mcqueen/scene.gltf" />
   </a-assets>
 
-  <!-- Example 2: Custom Pattern Marker -->
+  <!-- Custom Pattern Marker -->
   <a-marker
-          type="pattern"
-          url="assets/marker/pattern-mcqueen.patt"
-          clickable="https://www.pokewiki.de/Magnetilo"
+      type="pattern"
+      url="assets/marker/pattern-mcqueen.patt"
+      clickable="https://www.pokewiki.de/Magnetilo"
   >
     <a-gltf-model
-            src="#mcqueen"
-            scale="0.1 0.1 0.1"
-            rotation="-90 0 0"
-            position="0 0 0"
-    >
-      <a-entity
-              geometry="primitive: plane; width: 50; height: 0;"
-              text="value: \nMcqueen
-                [Tap to see more information]\n\n;
-            color: black; zOffset: 0.9; xOffset: 0.9;"
-              material="color: white"
-              position="0 -10 0"
-      ></a-entity>
-    </a-gltf-model>
+        src="#mcqueen"
+        scale="0.2 0.2 0.2"
+        rotation="0 180 0"
+        position="0 0 0"
+    ></a-gltf-model>
 
-    <a-box
-            position="0 0.5 0"
-            material="color: red"
-    ></a-box>
+    <a-entity
+        geometry="primitive: plane; width: 1; height: 0.5;"
+        text="value: Lightning McQueen [Tap for more info]; color: black;"
+        material="color: white"
+        position="0 0.3 0"
+    ></a-entity>
   </a-marker>
 
-  <!-- Add Camera -->
   <a-entity
           camera
           cursor="rayOrigin: mouse; fuse: true; fuseTimeout: 0;"
